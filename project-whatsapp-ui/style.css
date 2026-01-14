@@ -1,0 +1,422 @@
+html{
+    padding: 0%;
+    border: 0cap;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    border: 0cap;
+}
+
+#mainbody{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+/* SIDE BAR */
+#sidebar{
+    /* size */
+    height: 100vh;
+    width: 69px;
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* appearence */
+    border-right: 0.5px solid rgb(91, 86, 86);
+    background-color: #272626;
+}
+
+/* TOP (SIDE BAR) */
+#top{
+    margin-top: 16px;
+    margin-left: 10px;
+    
+/* BOTTOM (SIDE BAR) */ 
+}
+#bottom{
+    /* layout */
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar-icon{
+    /* position */
+    margin-bottom: 3px;
+    border-radius: 8px;
+
+    /* size */
+    height: 49px;
+    width: 49px;
+}
+
+.sidebar-icon:hover{
+    /* appearence */
+    background-color: #383737;
+}
+
+.icon-c{
+    /* size */
+    height: 22px;
+    width: 22px;
+
+    /* layout */
+    font-weight: 900;
+    padding: 13px;
+
+    /* appearence */
+    color: white;   
+}
+
+.icons{
+    /* size */
+    width: 200px;
+    height: 204px;
+}
+
+.separate{
+    /* size */
+    height: 0.5px;
+    width: 48px;
+
+    /* layout */
+    margin-top: 9px;
+    margin-bottom: 9px;
+    
+    /* appearence */
+    background-color: rgb(91, 86, 86);
+}
+
+/* ------------------------------------------------------------------------- */
+
+#chat-list{
+    /* size */
+    width: 378px;
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    
+    /* spacing */
+    padding: 8px;
+    
+    /* appearence */
+    background-color: #1f1f1f;
+    border-right: 0.5px solid rgb(91, 86, 86);
+}
+
+#chat-list-header{
+    /* size */
+    height: 30px;
+
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding-top: 8px;
+    padding-bottom: 1px;
+    padding-left: 14px;
+    padding-right: 5px;
+
+
+    /* appearence */
+    background-color: #1f1f1f;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;  
+}
+
+.icon-header{
+    /* size */
+    height: 20px;
+    width: 20px;
+
+    /* layout */
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+    /* appearence */
+    color: white;
+    font-weight: 900;
+}
+
+#searchbar{
+    /* size */
+    height: 40px;
+
+    /* layout */
+    position: relative;
+    flex-shrink: 0;
+    
+    /* appearence */
+    color: #1f1f1f;
+    background-color: #1f1f1f;
+}
+
+.search-icon{
+    /* size */
+    height: 12px;
+    width: 10px;
+
+    /* layout */
+    padding-left: 5px;
+    padding-top: 5px;
+    position: absolute;
+}
+
+#searchbar input{
+    /* size */
+    height: 29px;
+    width: 345px;
+
+    /* layout */
+    padding-left: 30px;
+    
+    /* appearence */
+    background-color: #1f1f1f;
+    border: 0.5px solid rgb(91, 86, 86);
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    font-size: 13px;
+}
+
+#searchbar input:focus-within{
+    /* appearence */
+    border: 2px solid #25D366;
+}
+
+button{
+    /* layout */
+    padding-top: 7px;
+    padding-bottom: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+
+    /* appearence */
+    background-color: #313131;
+    color: rgb(127, 121, 121);
+    border: 0;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+button:active{
+    /* appearence */
+    background-color: #133822;
+    color: rgb(222, 231, 222);
+}
+   
+#conversation-list{
+    /* layout */
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    /* appearence */
+    background-color: #1f1f1f;
+    font-size: 1px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;   
+}
+
+.conversation-item{
+    /* size */
+    height: 72px;
+    width: 357px;
+
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    padding-right: 4px;
+    
+    /* appearence */
+    border-radius: 5px;
+}
+
+.conversation-item:hover{
+    /* appearence */
+    background-color: #383737;
+}
+
+.avatar{
+    /* size */
+    width: 56px;
+
+    /* layout */
+    padding-top: 12px;
+    padding-left: 8px;
+}
+
+.image{
+    /* size */
+    height: 48px;
+    width: 48px;
+    
+    /* appearence */
+    border-radius: 24px;
+}
+
+.info-box{
+    /* size */
+    width: 300px;
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+
+    /* appearence */
+    color: white;
+}
+
+.person{
+    /* size */
+    height: 34px;
+    
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name{
+    /* size */
+    width: 240px;
+
+    /* layout */
+    padding-top: 16px;
+    padding-left: 7px;
+    
+    /* appearence */
+    font-size: 15px;
+}
+
+.time{
+    /* size */
+    width: 70px;
+
+    /* layout */
+    padding-top: 19px;
+    text-align: right;
+    
+    /* appearence */
+    color: #9FA3A6;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.recent-info{
+    /* size */
+    height: 30px;
+    
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.recent-message{
+    /* size */
+    width: 240px;
+
+    /* layout */
+    padding-left: 7px;
+    
+    /* appearence */
+    color: #9FA3A6;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.tick-icon{
+    /* size */
+    width: 12px;
+    height: 12px;
+}
+
+/* --------------------------------------------------------------------- */
+
+#chats{
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    /* appearence */
+    background-color: #1f1e1e;
+    
+}
+
+#whatsapp-svg{
+    /* size */
+    height: 100px;
+
+    /* layout */
+    padding-left: 470px;
+    margin-top: 380px;
+}
+
+#whatsapp-svg-control{
+    /* size */
+    height: 85px;
+    width: 85px;
+
+    /* appearence */
+    color: #9FA3A6;
+}
+
+#whatsapp-title{
+    /* size */
+    height: 70px;
+
+    /* layout */
+    padding-left: 400px;
+    padding-top: 10px;
+
+    /* appearence */
+    color: #9FA3A6;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+}
+
+#security-message{
+    /* size */
+    height: 80px;
+
+    /* layout */
+    display: flex;
+    margin-top: 275px;
+    padding-left: 400px;
+
+    /* appearence */
+    color: #9FA3A6;
+}
+
+.lock-icon{
+    /* size */
+    height: 15px;
+    width: 15px;
+
+    /* layout */
+    margin-top: 2px;
+    margin-right: 4px;
+    
+    /* appearence */
+    color: #9FA3A6;
+}
+
+#message{
+    /* appearence */
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+}
