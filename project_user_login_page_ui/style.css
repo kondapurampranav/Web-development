@@ -1,0 +1,169 @@
+html,
+body {
+    background: linear-gradient(
+        120deg,
+        #05001f,
+        rgb(42, 2, 2),
+        #000000
+    );
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#info {
+    padding-top: 120px;
+    border: 1px solid rgb(133, 119, 119);
+    width: 650px;
+    height: 530px;
+    margin-top: 150px;
+    margin-left: 450px;
+    border-radius: 325px;
+    position: relative;
+    z-index: 3;
+    background-color: rgba(240, 239, 239, 0.38);
+    backdrop-filter: blur(18px);
+    text-align: center;
+    color: rgb(201, 201, 201);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form input{
+    height: 50px;
+    width: 300px;
+    border-radius: 18px;
+    border: 0;
+    padding-left: 20px;
+    background-color: rgb(125, 124, 124);
+    color: rgb(255, 254, 254);
+    font-size: 15px;
+}
+
+#continue{
+    padding: 10px;
+    margin-top: 20px;
+    height: 30px;
+    width: 300px;
+    background-color: rgb(125, 124, 124);
+    border-radius: 18px;
+    font-size: 22px;
+}
+#continue:hover{
+    background-color: rgb(96, 95, 95);
+}
+
+#ball1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    border-radius: 50px;
+    z-index: 1;
+    background: radial-gradient(
+        circle at 65% 30%,
+        #ffffff,
+        #f478c6 35%,
+        #fd01ca 70%);
+    box-shadow: inset -15px -20px 30px rgba(0, 0, 0, 0.25),
+    0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+#ball2 {
+    width: 280px;
+    height: 280px;
+    
+    position: absolute;
+    left: 260px;
+    top: 270px;
+    border-radius: 140px;
+    z-index: 1;
+    background: radial-gradient(
+        circle at 65% 30%,
+        #ffffff,
+        #f478c6 35%,
+        #fd01ca 70%);
+    box-shadow: inset -15px -20px 30px rgba(0, 0, 0, 0.25),
+    0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+#ball3 {
+    width: 200px;
+    height: 200px;
+    
+    position: absolute;
+    left: 390px;
+    bottom: 90px;
+    border-radius: 100px;
+    z-index: 5;
+    background: radial-gradient(
+        circle at 65% 30%,
+        #ffffff,
+        #f478c6 35%,
+        #fd01ca 70%);
+    box-shadow: inset -15px -20px 30px rgba(0, 0, 0, 0.25),
+    0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+#ball4 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle at 65% 30%,
+            #ffffff,
+            #f478c6 35%,
+            #fd01ca 70%);
+    box-shadow:
+        inset -15px -20px 30px rgba(0, 0, 0, 0.25),
+        0 30px 60px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 280px;
+    bottom: 50px;
+    border-radius: 150px;
+    z-index: 1;
+
+}
+
+#ball5 {
+    width: 240px;
+    height: 240px;
+    
+    position: absolute;
+    right: 200px;
+    top: 300px;
+    border-radius: 120px;
+    z-index: 5;
+    background: radial-gradient(
+        circle at 65% 30%,
+        #ffffff,
+        #f478c6 35%,
+        #fd01ca 70%);
+    box-shadow: inset -15px -20px 30px rgba(0, 0, 0, 0.25),
+    0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+#ball6 {
+    width: 220px;
+    height: 220px;
+    background-color: rgb(108, 28, 94);
+    position: absolute;
+    top: 70px;
+    right: 390px;
+    border-radius: 110px;
+    z-index: 1;
+    background: radial-gradient(
+        circle at 65% 30%,
+        #ffffff,
+        #f478c6  35%,
+        #fd01ca 70%);
+    box-shadow: inset -15px -20px 30px rgba(0, 0, 0, 0.25),
+    0 30px 60px rgba(0, 0, 0, 0.5);
+
+}
