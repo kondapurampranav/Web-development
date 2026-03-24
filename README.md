@@ -19,5 +19,3 @@ A frontend-only clone of the WhatsApp Web interface built using **HTML** and **C
 This project is created **only for learning and practice purposes**.  
 It does **not** include backend, authentication, or real messaging.
 
-## 👤 Author
-**Pranav Kumar Reddy K**#
